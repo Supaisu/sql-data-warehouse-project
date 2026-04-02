@@ -45,24 +45,24 @@ Specifications
 ```
 sql-data-warehouse-project/
 │
-├── datasets/                              # Raw datasets used for the project (ERP and CRM data)
+├── datasets/                                   # Raw datasets used for the project (ERP and CRM data)
 │
-├── documents/                             # Project documentation and architecture details
-│   ├── Data Flow Diagram.drawio.png       # Data flow diagram
-│   ├── Data Mart (Star Schema).drawio.png # Star schema model
+├── documents/                                  # Project documentation and architecture details
+│   ├── Data Flow Diagram.drawio.png            # Data flow diagram
+│   ├── Data Mart (Star Schema).drawio.png      # Star schema model
 │   ├── Data Warehouse Architecture.drawio.png  # Project architecture
-│   ├── Integration Model.drawio.png       # Integration model
-│   └── data_catalog.md                    # Catalog of datasets, including field descriptions and metadata
+│   ├── Integration Model.drawio.png            # Integration model
+│   └── data_catalog.md                         # Catalog of datasets, including field descriptions and metadata
 │
-├── scripts/                               # SQL scripts for ETL and transformations
-│   ├── bronze/                            # Scripts for extracting and loading raw data
-│   ├── silver/                            # Scripts for cleaning and transforming data
-│   └── gold/                              # Scripts for creating analytical models
+├── scripts/                                    # SQL scripts for ETL and transformations
+│   ├── bronze/                                 # Scripts for extracting and loading raw data
+│   ├── silver/                                 # Scripts for cleaning and transforming data
+│   └── gold/                                   # Scripts for creating analytical models
 │
-├── tests/                                 # Test scripts and quality files
+├── tests/                                      # Test scripts and quality files
 │
-├── README.md                              # Project overview and instructions
-└── LICENSE                                # License information for the repository
+├── README.md                                   # Project overview and instructions
+└── LICENSE                                     # License information for the repository
 ```
 
 ## BI: Analytics and Reporting (Data Analytics)
