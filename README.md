@@ -41,28 +41,7 @@ Specifications
 ---
 
 Repository Structure
-data-warehouse-project/
-│
-├── datasets/                          # Raw datasets used for the project (ERP and CRM data)
-│
-├── docs/                              # Project documentation and architecture details
-├── docs/
-│   ├── data_flow_Diagram.drawio.png   # Data flow diagram
-│   ├── data_architecture.drawio.png   # Project architecture
-│   ├── data_models.drawio.png         # Star schema model
-│   └── data_catalog.md                # Field descriptions and metadata
-│
-├── scripts/
-│   ├── bronze/                        # Scripts for extracting and loading raw
-│   ├── silver/                        # Scripts for cleaning and transforming data
-│   ├── gold/                          # Scripts for creating analytical models
-│   └── init_database.sql              # Database and schema initialisation script
-│
-├── tests/                              # Test scripts and quality files
-│
-├── LICENSE                             # License information for the repository
-└── README.md                           # Project overview and instructions
-
+tree /F
 
 BI: Analytics and Reporting (Data Analytics)
 
