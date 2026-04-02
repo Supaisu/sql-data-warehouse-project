@@ -16,12 +16,12 @@ Usage Notes:
     - Investigate and resolve any discrepancies found during the checks.
 ===============================================================================
 */
-
 -- ====================================================================
 -- Checking 'silver.crm_cust_info'
 -- ====================================================================
 -- Check for NULLs or Duplicates in Primary Key
 -- Expectation: No Results
+
 SELECT 
     cst_id,
     COUNT(*) 
@@ -46,6 +46,7 @@ FROM silver.crm_cust_info;
 -- ====================================================================
 -- Check for NULLs or Duplicates in Primary Key
 -- Expectation: No Results
+
 SELECT 
     prd_id,
     COUNT(*) 
@@ -74,6 +75,7 @@ FROM silver.crm_prd_info;
 
 -- Check for Invalid Date Orders (Start Date > End Date)
 -- Expectation: No Results
+
 SELECT 
     * 
 FROM silver.crm_prd_info
