@@ -14,7 +14,7 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 
 ---
    
-Project Overview
+## Project Overview
 This project involves:
 
 1. Data Architecture: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
@@ -28,7 +28,7 @@ This project involves:
 
 Building the Data Warehouse
 
-Objective
+# Objective
 Develop a modern data warehouse using SQL server to consolidate sales data, enabling analytical reporting and informed decision-making. 
 
 Specifications
@@ -65,7 +65,7 @@ sql-data-warehouse-project/
 └── LICENSE                                # License information for the repository
 ```
 
-BI: Analytics and Reporting (Data Analytics)
+# BI: Analytics and Reporting (Data Analytics)
 
 Objective
 Develop SQL-based analytics to deliver detailed insights into:
@@ -77,11 +77,11 @@ These insights empower stakeholders with key business metrics, enabling strategi
 
 ---
 
-License
+# License
 
 This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
 
-About Me
+# About Me
 
 I am an aspiring data professional on a mission to become a valuable asset to a firm by bringing the skills and fresh perspective to deliver actionable results!
 
