@@ -41,7 +41,6 @@ Specifications
 
 ---
 
-Repository Structure
 ## Repository Structure
 ```
 sql-data-warehouse-project/
