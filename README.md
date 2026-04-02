@@ -24,7 +24,7 @@ This project involves:
 
 ---
 
-## Project Requirements:
+## Project Requirements
 
 Building the Data Warehouse
 
