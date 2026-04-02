@@ -5,6 +5,25 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 
 ---
 
+Data Architecture
+<img width="1091" height="631" alt="image" src="https://github.com/user-attachments/assets/8da5c1f1-9050-46ee-8fbf-ffbf0ef35c34" />
+
+1. Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
+2. Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
+3. Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
+
+---
+   
+Project Overview
+This project involves:
+
+Data Architecture: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
+ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
+Data Modeling: Developing fact and dimension tables optimized for analytical queries.
+Analytics & Reporting: Creating SQL-based reports and dashboards for actionable insights.
+
+---
+
 Project Requirements:
 
 Building the Data Warehouse
@@ -20,6 +39,30 @@ Specifications
 - Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
 ---
+
+Repository Structure
+data-warehouse-project/
+│
+├── datasets/                          # Raw datasets used for the project (ERP and CRM data)
+│
+├── docs/                              # Project documentation and architecture details
+├── docs/
+│   ├── data_flow_Diagram.drawio.png   # Data flow diagram
+│   ├── data_architecture.drawio.png   # Project architecture
+│   ├── data_models.drawio.png         # Star schema model
+│   └── data_catalog.md                # Field descriptions and metadata
+│
+├── scripts/
+│   ├── bronze/                        # Scripts for extracting and loading raw
+│   ├── silver/                        # Scripts for cleaning and transforming data
+│   ├── gold/                          # Scripts for creating analytical models
+│   └── init_database.sql              # Database and schema initialisation script
+│
+├── tests/                              # Test scripts and quality files
+│
+├── LICENSE                             # License information for the repository
+└── README.md                           # Project overview and instructions
+
 
 BI: Analytics and Reporting (Data Analytics)
 
