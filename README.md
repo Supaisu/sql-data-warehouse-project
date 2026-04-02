@@ -5,7 +5,7 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 
 ---
 
-Data Architecture
+## Data Architecture
 <img width="1091" height="631" alt="image" src="https://github.com/user-attachments/assets/8da5c1f1-9050-46ee-8fbf-ffbf0ef35c34" />
 
 1. Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
@@ -24,7 +24,7 @@ This project involves:
 
 ---
 
-Project Requirements:
+## Project Requirements:
 
 Building the Data Warehouse
 
