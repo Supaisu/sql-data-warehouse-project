@@ -18,11 +18,11 @@ A modern data warehouse built with SQL Server, demonstrating end-to-end data eng
 
 ## Key Concepts Demonstrated
 
-- **Medallion architecture** — Structured data flow across bronze, silver, and gold layers
-- **Star schema design** — Fact and dimension tables optimised for analytical workloads
-- **ETL pipeline development** — Extract, transform, and load processes from source to warehouse
-- **Data quality engineering** — Cleansing, deduplication, and standardisation of raw data
-- **Multi-source integration** — Combining ERP and CRM systems into a unified data model
+- **Medallion architecture** - Structured data flow across bronze, silver, and gold layers
+- **Star schema design** - Fact and dimension tables optimised for analytical workloads
+- **ETL pipeline development** - Extract, transform, and load processes from source to warehouse
+- **Data quality engineering** - Cleansing, deduplication, and standardisation of raw data
+- **Multi-source integration** - Combining ERP and CRM systems into a unified data model
 - **Analytical reporting** — SQL-based insights into customer behaviour, product performance, and sales trends
 
 ---
@@ -70,9 +70,9 @@ sql-data-warehouse-project/
 
 The gold layer supports SQL-based analytics delivering insights into:
 
-- **Customer behaviour** — Segmentation, purchasing patterns, and retention analysis
-- **Product performance** — Revenue by product, category trends, and margin analysis
-- **Sales trends** — Period-over-period comparisons, seasonal patterns, and growth metrics
+- **Customer behaviour** - Segmentation, purchasing patterns, and retention analysis
+- **Product performance** - Revenue by product, category trends, and margin analysis
+- **Sales trends** - Period-over-period comparisons, seasonal patterns, and growth metrics
 
 These insights are designed to empower stakeholders with actionable business metrics for strategic decision-making.
 
@@ -94,7 +94,7 @@ These insights are designed to empower stakeholders with actionable business met
 
 Data engineering postgraduate with a background in Accounting and Finance. Currently completing an MSc in Computer Science with Data Analytics, building end-to-end data solutions that bridge business understanding with technical execution.
 
-- [LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN)
+- [LinkedIn]([https://www.linkedin.com/in/umaircadir/])
 - [GitHub](https://github.com/Supaisu)
 
 ---
