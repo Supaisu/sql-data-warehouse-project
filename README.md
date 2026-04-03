@@ -1,88 +1,104 @@
 # Data Warehouse and Analytics Project
 
-Welcome to the Data Warehouse and Analytics Project repository!
-This project demonstrates a comprehensive data warehousing and analytics solutiom, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+A modern data warehouse built with SQL Server, demonstrating end-to-end data engineering — from raw data ingestion through to business-ready analytics. Built using medallion architecture (bronze, silver, gold layers) with ETL pipelines, star schema modelling, and analytical reporting.
 
 ---
 
 ## Data Architecture
-<img width="1091" height="631" alt="image" src="https://github.com/user-attachments/assets/8da5c1f1-9050-46ee-8fbf-ffbf0ef35c34" />
 
-1. Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
+![Data Architecture](documents/Data%20Warehouse%20Architecture.drawio.png)
+
+**Bronze Layer** — Stores raw data as-is from source systems. Data is ingested from CSV files (ERP and CRM) into SQL Server.
+
+**Silver Layer** — Data cleansing, standardisation, and normalisation. Handles quality issues, resolves inconsistencies, and prepares data for downstream modelling.
+
+**Gold Layer** — Business-ready data modelled into a star schema. Optimised for analytical queries and reporting, with fact and dimension tables designed for performance.
 
 ---
-   
+
+## Key Concepts Demonstrated
+
+- **Medallion architecture** — Structured data flow across bronze, silver, and gold layers
+- **Star schema design** — Fact and dimension tables optimised for analytical workloads
+- **ETL pipeline development** — Extract, transform, and load processes from source to warehouse
+- **Data quality engineering** — Cleansing, deduplication, and standardisation of raw data
+- **Multi-source integration** — Combining ERP and CRM systems into a unified data model
+- **Analytical reporting** — SQL-based insights into customer behaviour, product performance, and sales trends
+
+---
+
 ## Project Overview
-This project involves:
 
-1. Data Architecture: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
-2. ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
-3. Data Modeling: Developing fact and dimension tables optimized for analytical queries.
-4. Analytics & Reporting: Creating SQL-based reports and dashboards for actionable insights.
-
----
-
-## Project Requirements
-
-Building the Data Warehouse
-
-Objective
-
-Develop a modern data warehouse using SQL server to consolidate sales data, enabling analytical reporting and informed decision-making. 
-
-Specifications
-- Data Sources: Import data from two source systems (ERP and CRM) provided as CSV files.
-- Data Quality: Cleanse and resolve data quality issues prior to analysis
-- Integration: Combine both sources into a single, user-friendly data model designed for analytical queries
-- Scope: Focus on the latest dataset only; historisation of data is not required.
-- Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+| Area | Detail |
+|------|--------|
+| **Data Sources** | ERP and CRM systems (provided as CSV files) |
+| **Database** | SQL Server |
+| **Architecture** | Medallion (Bronze → Silver → Gold) |
+| **Data Model** | Star schema with fact and dimension tables |
+| **Focus** | Latest dataset only (no historisation) |
 
 ---
 
 ## Repository Structure
+
 ```
 sql-data-warehouse-project/
 │
-├── datasets/                                   # Raw datasets used for the project (ERP and CRM data)
+├── datasets/              # Raw datasets (ERP and CRM data)
 │
-├── documents/                                  # Project documentation and architecture details
-│   ├── Data Flow Diagram.drawio.png            # Data flow diagram
-│   ├── Data Mart (Star Schema).drawio.png      # Star schema model
-│   ├── Data Warehouse Architecture.drawio.png  # Project architecture
-│   ├── Integration Model.drawio.png            # Integration model
-│   └── data_catalog.md                         # Catalog of datasets, including field descriptions and metadata
+├── documents/             # Architecture diagrams and documentation
+│   ├── Data Flow Diagram.drawio.png
+│   ├── Data Mart (Star Schema).drawio.png
+│   ├── Data Warehouse Architecture.drawio.png
+│   ├── Integration Model.drawio.png
+│   └── data_catalog.md
 │
-├── scripts/                                    # SQL scripts for ETL and transformations
-│   ├── bronze/                                 # Scripts for extracting and loading raw data
-│   ├── silver/                                 # Scripts for cleaning and transforming data
-│   └── gold/                                   # Scripts for creating analytical models
+├── scripts/               # SQL scripts for ETL and transformations
+│   ├── bronze/            # Raw data extraction and loading
+│   ├── silver/            # Cleaning and transformation
+│   └── gold/              # Analytical models and star schema
 │
-├── tests/                                      # Test scripts and quality files
+├── tests/                 # Data quality tests and validation
 │
-├── README.md                                   # Project overview and instructions
-└── LICENSE                                     # License information for the repository
+├── README.md
+└── LICENSE
 ```
 
-## BI: Analytics and Reporting (Data Analytics)
+---
 
-Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- Customer Behaviour
-- Product Performance
-- Sales Trends
+## Analytics and Reporting
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+The gold layer supports SQL-based analytics delivering insights into:
+
+- **Customer behaviour** — Segmentation, purchasing patterns, and retention analysis
+- **Product performance** — Revenue by product, category trends, and margin analysis
+- **Sales trends** — Period-over-period comparisons, seasonal patterns, and growth metrics
+
+These insights are designed to empower stakeholders with actionable business metrics for strategic decision-making.
+
+---
+
+## Architecture Diagrams
+
+| Diagram | Description |
+|---------|-------------|
+| [Data Warehouse Architecture](documents/Data%20Warehouse%20Architecture.drawio.png) | End-to-end system architecture |
+| [Data Flow Diagram](documents/Data%20Flow%20Diagram.drawio.png) | Data movement across layers |
+| [Star Schema](documents/Data%20Mart%20(Star%20Schema).drawio.png) | Gold layer dimensional model |
+| [Integration Model](documents/Integration%20Model.drawio.png) | Source system integration design |
+| [Data Catalog](documents/data_catalog.md) | Field descriptions and metadata |
+
+---
+
+## About Me
+
+Data engineering postgraduate with a background in Accounting and Finance. Currently completing an MSc in Computer Science with Data Analytics, building end-to-end data solutions that bridge business understanding with technical execution.
+
+- [LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN)
+- [GitHub](https://github.com/Supaisu)
 
 ---
 
 ## License
 
-This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
-
-## About Me
-
-I am an aspiring data professional on a mission to become a valuable asset to a firm by bringing the skills and fresh perspective to deliver actionable results!
-
-(This is also my first ever project, as part of the SQL mastery course that I am completing)
+This project is licensed under the MIT License. Free to use, modify, and share with proper attribution.
