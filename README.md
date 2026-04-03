@@ -94,7 +94,7 @@ These insights are designed to empower stakeholders with actionable business met
 
 Data engineering postgraduate with a background in Accounting and Finance. Currently completing an MSc in Computer Science with Data Analytics, building end-to-end data solutions that bridge business understanding with technical execution.
 
-- [LinkedIn]([https://www.linkedin.com/in/umaircadir/])
+- [LinkedIn](https://www.linkedin.com/in/umaircadir/)
 - [GitHub](https://github.com/Supaisu)
 
 ---
