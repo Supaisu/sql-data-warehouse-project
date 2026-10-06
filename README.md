@@ -4,7 +4,7 @@
 
 <p align="center">
 
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white) ![T-SQL](https://img.shields.io/badge/T--SQL-0B1220?style=flat-square) ![Architecture](https://img.shields.io/badge/Medallion-38BDF8?style=flat-square&labelColor=0B1220) ![License](https://img.shields.io/badge/License-MIT-334155?style=flat-square)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white) ![T-SQL](https://img.shields.io/badge/T--SQL-0B1220?style=flat-square) ![Architecture](https://img.shields.io/badge/Architecture-Medallion-38BDF8?style=flat-square&labelColor=0B1220) ![License](https://img.shields.io/badge/License-MIT-334155?style=flat-square)
 
 </p>
 
