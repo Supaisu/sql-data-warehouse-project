@@ -1,4 +1,12 @@
-# Data Warehouse and Analytics Project
+<p align="center">
+  <img src="assets/banner.svg" alt="Data Warehouse and Analytics Project" width="100%">
+</p>
+
+<p align="center">
+
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white) ![T-SQL](https://img.shields.io/badge/T--SQL-0B1220?style=flat-square) ![Architecture](https://img.shields.io/badge/Medallion-38BDF8?style=flat-square&labelColor=0B1220) ![License](https://img.shields.io/badge/License-MIT-334155?style=flat-square)
+
+</p>
 
 A modern data warehouse built with SQL Server, demonstrating end-to-end data engineering, from raw data ingestion through to business-ready analytics. Built using medallion architecture (bronze, silver, gold layers) with ETL pipelines, star schema modelling, and analytical reporting.
 
