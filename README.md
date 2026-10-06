@@ -1,6 +1,14 @@
-# Data Warehouse and Analytics Project
+<p align="center">
+  <img src="assets/banner.svg" alt="Data Warehouse and Analytics Project" width="100%">
+</p>
 
-A modern data warehouse built with SQL Server, demonstrating end-to-end data engineering — from raw data ingestion through to business-ready analytics. Built using medallion architecture (bronze, silver, gold layers) with ETL pipelines, star schema modelling, and analytical reporting.
+<p align="center">
+
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white) ![T-SQL](https://img.shields.io/badge/T--SQL-0B1220?style=flat-square) ![Architecture](https://img.shields.io/badge/Medallion-38BDF8?style=flat-square&labelColor=0B1220) ![License](https://img.shields.io/badge/License-MIT-334155?style=flat-square)
+
+</p>
+
+A modern data warehouse built with SQL Server, demonstrating end-to-end data engineering, from raw data ingestion through to business-ready analytics. Built using medallion architecture (bronze, silver, gold layers) with ETL pipelines, star schema modelling, and analytical reporting.
 
 ---
 
@@ -23,7 +31,7 @@ A modern data warehouse built with SQL Server, demonstrating end-to-end data eng
 - **ETL pipeline development** - Extract, transform, and load processes from source to warehouse
 - **Data quality engineering** - Cleansing, deduplication, and standardisation of raw data
 - **Multi-source integration** - Combining ERP and CRM systems into a unified data model
-- **Analytical reporting** — SQL-based insights into customer behaviour, product performance, and sales trends
+- **Analytical reporting** - SQL-based insights into customer behaviour, product performance, and sales trends
 
 ---
 
@@ -90,9 +98,26 @@ These insights are designed to empower stakeholders with actionable business met
 
 ---
 
+## How to Run
+
+1. Install [SQL Server Express](https://www.microsoft.com/en-gb/sql-server/sql-server-downloads) and [SSMS](https://learn.microsoft.com/en-us/ssms/download-sql-server-management-studio-ssms).
+2. Clone this repo and run `scripts/init_database.sql` to create the `DataWarehouse` database and the `bronze`, `silver` and `gold` schemas. **Warning:** this drops any existing `DataWarehouse` database.
+3. Run `scripts/bronze/ddl_bronze.SQL`, then update the CSV file paths in `scripts/bronze/proc_load_bronze.sql` to point at your local `datasets/` folder and run it. Load the data with `EXEC bronze.load_bronze;`
+4. Run `scripts/silver/ddl_silver.sql` and `scripts/silver/proc_load_silver.sql`, then `EXEC silver.load_silver;`
+5. Run `scripts/gold/ddl_gold.sql` to create the star schema views.
+6. Validate the results with the scripts in `tests/`.
+
+---
+
+## Acknowledgements
+
+This project was built by following the [Data With Baraa](https://github.com/DataWithBaraa/sql-data-warehouse-project) SQL Data Warehouse course, which provided the dataset and project structure.
+
+---
+
 ## About Me
 
-Data engineering postgraduate with a background in Accounting and Finance. Currently completing an MSc in Computer Science with Data Analytics, building end-to-end data solutions that bridge business understanding with technical execution.
+Data analyst with a BSc in Accounting and Finance (Royal Holloway) and an MSc in Computer Science with Data Analytics (University of York). I build end-to-end data solutions that bridge business understanding with technical execution.
 
 - [LinkedIn](https://www.linkedin.com/in/umaircadir/)
 - [GitHub](https://github.com/Supaisu)
@@ -101,4 +126,4 @@ Data engineering postgraduate with a background in Accounting and Finance. Curre
 
 ## License
 
-This project is licensed under the MIT License. Free to use, modify, and share with proper attribution.
+This project is licensed under the [MIT License](LICENSE).
